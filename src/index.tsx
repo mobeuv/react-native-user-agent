@@ -17,6 +17,22 @@ const UserAgent = NativeModules.UserAgent
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return UserAgent.multiply(a, b);
+export function getUserAgent(): string {
+  return UserAgent.userAgent;
+}
+
+export function getAll(): string {
+  return UserAgent;
+}
+
+export function getDarwinVersion(): string {
+  return UserAgent.darwinVersion;
+}
+
+export function getConstants(): Constants {
+  return UserAgent.getConstants();
+}
+
+export function getSystemVersion(): string {
+  return UserAgent.systemVersion;
 }
