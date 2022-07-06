@@ -1,5 +1,5 @@
 {
-  "name": "react-native-user-agent",
+  "name": "@mobeuv/react-native-user-agent",
   "version": "1.0.0",
   "description": "test",
   "main": "lib/commonjs/index",
@@ -94,6 +94,9 @@
     },
     "npm": {
       "publish": true
+    },
+    "publishConfig": {
+      "access": "public"
     },
     "github": {
       "release": true
