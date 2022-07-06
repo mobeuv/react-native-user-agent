@@ -1,18 +1,19 @@
 import * as React from 'react';
 
 import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-user-agent';
+import { getUserAgent } from 'react-native-user-agent';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
+  const [result, setResult] = React.useState<string>('nothing');
 
   React.useEffect(() => {
-    multiply(3, 7).then(setResult);
+    const agent = getUserAgent();
+    setResult(agent);
   }, []);
 
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Text>Agent: {result}</Text>
     </View>
   );
 }
@@ -22,6 +23,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+    margin: 20,
   },
   box: {
     width: 60,

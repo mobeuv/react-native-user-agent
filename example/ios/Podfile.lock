@@ -554,7 +554,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: b7b553412f2ec768fe6c8f27cd6bafdb9d8719e6
   React-jsinspector: c5989c77cb89ae6a69561095a61cce56a44ae8e8
   React-logger: a0833912d93b36b791b7a521672d8ee89107aff1
-  react-native-user-agent: 19797720b335cff18bce7f531f6145e8c531f5b3
+  react-native-user-agent: d92483d1f2e335ba2ecfccfb7de5e487d393a4eb
   React-perflogger: a18b4f0bd933b8b24ecf9f3c54f9bf65180f3fe6
   React-RCTActionSheet: 547fe42fdb4b6089598d79f8e1d855d7c23e2162
   React-RCTAnimation: bc9440a1c37b06ae9ebbb532d244f607805c6034
@@ -571,6 +571,6 @@ SPEC CHECKSUMS:
   Yoga: 99652481fcd320aefa4a7ef90095b95acd181952
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: e452eee4a8add6aebed37fed3b21cee64f7cf1ff
+PODFILE CHECKSUM: 1660fd34023651e44dcf77ceee0c81041cc858a1
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3
