@@ -44,7 +44,8 @@
   },
   "homepage": "https://github.com/mobeuv/react-native-user-agent#readme",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   },
   "devDependencies": {
     "@arkweid/lefthook": "^0.7.7",
