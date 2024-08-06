@@ -47,6 +47,8 @@ const fetchUserAgent = async () => {
 | iOS      | `APPLICATION_NAME/APPLICATION_VERSION_NAME - Darwin/DARWIN_VERSION CFNetwork/CFNETWORK DEVICE_NAME SYSTEM_NAME/SYSTEM_VERSION` | `ReactTestApp/1.0 - Darwin/23F79 CFNetwork/1474 iPhone iOS/17.0` |
 | Android  | `APPLICATION_NAME/APPLICATION_VERSION_NAME - WebSettings_getDefaultUserAgent`                             | `ReactNativeUserAgentExample/1.0 - Mozilla/5.0 (Linux; Android 12; sdk_gphone64_arm64 Build/SE1A.220203.002.A1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/124.0.6367.179 Mobile Safari/537.36`                    |
 
+If `WebSettings.getDefaultUserAgent` is unavailable or an error occurs, we will try using `System.getProperty("http.agent")`. If `getProperty` also fails, the User-Agent will default to `APPLICATION_NAME/APPLICATION_VERSION_NAME`. In case of any generic errors, a rejection will be handled through a catch block.
+
 
 ## Requirements
 
