@@ -17,6 +17,6 @@ const ReactNativeUserAgent = NativeModules.ReactNativeUserAgent
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return ReactNativeUserAgent.multiply(a, b);
+export function getUserAgent(): Promise<string> {
+  return ReactNativeUserAgent.getUserAgent();
 }
