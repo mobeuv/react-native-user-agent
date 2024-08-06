@@ -114,6 +114,9 @@
     "npm": {
       "publish": true
     },
+    "publishConfig": {
+      "access": "public"
+    },
     "github": {
       "release": true
     },
